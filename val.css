@@ -1,0 +1,89 @@
+/* yes.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: plum;
+  margin: 0; /* Remove default margin */
+}
+
+/* Position the "No" button absolutely within body */
+#noButton {
+  position: absolute;
+  left: 10px; /* Adjust the left margin */
+  transition: 0.5s;
+  border: 2px solid #ffffff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#yesButton {
+  position: absolute;
+  right: 10px; /* Adjust the right margin */
+  border: 2px solid #ffffff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header_text {
+  font-family: 'Nunito';
+  font-size: 4vw; /* Responsive font size */
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 2vh; /* Adjusted for responsiveness */
+  margin-bottom: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh; /* Adjusted for responsiveness */
+  margin-left: 2vw; /* Adjusted for responsiveness */
+}
+
+.btn {
+  background-color: rgb(146, 62, 146);
+  color: white;
+  padding: 2vh 2vw; /* Adjusted for responsiveness */
+  text-align: center;
+  display: inline-block;
+  font-size: 2vw; /* Responsive font size */
+  font-weight: bold;
+  margin: 0 2vw; /* Adjusted for responsiveness */
+  cursor: pointer;
+  border: none;
+  border-radius: 2vw; /* Responsive border-radius */
+  transition: background-color 0.3s ease;
+  height: 8vh; /* Adjusted for responsiveness */
+  width: 20vw; /* Adjusted for responsiveness */
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* Align to the bottom */
+  margin-left: 2vw; /* Adjusted for responsiveness */
+  text-align: center; /* Center the image horizontally */
+}
+
+.gif_container img {
+  max-width: 100%;
+  max-height: 60vh; /* Adjusted for responsiveness */
+  margin-top: 2vh; /* Adjusted for responsiveness */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .btn {
+    width: 80%; /* Adjusted width for smaller screens */
+    margin: 2vh auto; /* Center the buttons on smaller screens */
+  }
+
+  .header_text {
+    font-size: 6vw; /* Adjusted font size for smaller screens */
+  }
+}
+
