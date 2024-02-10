@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  margin: 0;
+}
+
+.text {
+  font-size: 5vw; /* Responsive font size */
+  font-weight: bold;
+  color: whitesmoke;
+  text-align: center;
+  margin-top: 2vh; /* Adjusted for responsiveness */
+  margin-bottom: 1vh; /* Adjusted for responsiveness */
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 2vw; /* Adjusted for responsiveness */
+  text-align: center;
+}
+
+.gif_container img {
+  max-width: 100%;
+  max-height: 50vh; /* Adjusted for responsiveness */
+  margin-top: 2vh; /* Adjusted for responsiveness */
+}
+
+button{
+    border: 2px solid #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    width: 140px;
+  }
+
+.cbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 8vw; /* Adjusted font size for smaller screens */
+  }
+
+  .gif_container {
+    margin-left: 0; /* Remove margin for smaller screens */
+  }
+
+  .gif_container img {
+    max-height: 40vh; /* Adjusted for smaller screens */
+  }
+}
+
+
